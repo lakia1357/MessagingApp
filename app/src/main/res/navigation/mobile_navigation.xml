@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_receive"
+    tools:ignore="UnusedNavigation">
+
+    <fragment
+        android:id="@+id/nav_receive"
+        android:name="com.example.messagingapp.ReceiveMessageFragment"
+        android:label="@string/menu_receive"
+        tools:layout="@layout/fragment_receive" >
+        <action
+            android:id="@+id/action_nav_receive_to_nav_write"
+            app:destination="@id/nav_write" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_write"
+        android:name="com.example.messagingapp.WriteMessageFragment"
+        android:label="@string/menu_write"
+        tools:layout="@layout/fragment_write" />
+
+    <fragment
+        android:id="@+id/nav_send"
+        android:name="com.example.messagingapp.SendMessageFragment"
+        android:label="@string/menu_send"
+        tools:layout="@layout/fragment_send" />
+
+    <fragment
+        android:id="@+id/nav_modify"
+        android:name="com.example.messagingapp.ModifyFragment"
+        android:label="@string/menu_modify"
+        tools:layout="@layout/fragment_modify" />
+
+
+</navigation>

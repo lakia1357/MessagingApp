@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:gravity="center|top"
+    android:orientation="vertical">
+
+
+    <ImageButton
+        android:id="@+id/userImageButton"
+        android:layout_width="150dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="50dp"
+        android:scaleType="fitXY"
+        android:backgroundTint="#ffffff"
+        app:srcCompat="@drawable/gallery" />
+
+
+    <TextView
+        android:id="@+id/modify_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="40dp"
+        android:drawableLeft="@drawable/userimg_customise"
+        android:drawablePadding="10dp" />
+
+    <EditText
+        android:id="@+id/modify_pw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="40dp"
+        android:drawableLeft="@drawable/pwimg_customise"
+        android:drawablePadding="10dp"
+        android:hint="신규암호" />
+
+    <EditText
+        android:id="@+id/modify_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="40dp"
+        android:drawableLeft="@drawable/nameimg_customise"
+        android:drawablePadding="10dp" />
+
+    <Spinner
+        android:id="@+id/spinnerDepartment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"/>
+
+    <Button
+        android:id="@+id/modify_Button"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginRight="40dp"
+        android:backgroundTint="#194C80"
+        android:text="변경"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp" />
+</LinearLayout>
